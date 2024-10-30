@@ -10,7 +10,7 @@ export const dbConnection = async () => {
     .connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 10000,  // Set connection timeout to 10 seconds
+      serverSelectionTimeoutMS: 30000,  // Set connection timeout to 10 seconds
     })
     .then(() => console.log("Database connected"))
     .catch((err) => console.error("Database connection error:", err));
